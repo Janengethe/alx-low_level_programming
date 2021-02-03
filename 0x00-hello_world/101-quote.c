@@ -2,8 +2,8 @@
 #include <unistd.h>
 /**
  *main - Entry point
+ *write - print a string
  *Return: return to main
- *
  */
 int main(void)
 {

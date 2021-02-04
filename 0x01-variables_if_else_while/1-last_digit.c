@@ -6,7 +6,6 @@
  *Description - uses printf
  *Return: retirn is an integer
  */
-/* betty style doc for function main goes there */
 int main(void)
 {
 int n;

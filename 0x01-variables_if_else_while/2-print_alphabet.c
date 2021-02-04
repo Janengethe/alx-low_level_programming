@@ -8,7 +8,7 @@ int main(void)
 char alphabet, newline;
 alphabet = 'a';
 newline = '\n';
-while (alphabet <= "z")
+while (alphabet <= 'z')
 {
 putchar (alphabet);
 alphabet++;

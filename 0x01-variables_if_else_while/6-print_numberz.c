@@ -5,14 +5,13 @@
  */
 int main(void)
 {
-int number, newline;
-number = 0;
-newline = '\n'
-while (number < 10)
+int n;
+n = '0';
+while (n <= '9')
 {
-putchar(number);
-number++;
+putchar(n);
+n++;
 }
-putchar(newline);
+putchar("\n");
 return (0);
 }

@@ -3,8 +3,14 @@
  *main - print the lower case of alphabets
  *Return: always 0 (success)
  */
-int main(void)
+void print_alphabet(void)
 {
-print_alphabet();
-return (0);
+  char n;
+  n='a';
+  while (n <= z)
+    {
+      _putchar(n);
+      n++;
+    }
+  _putchar('\n');
 }

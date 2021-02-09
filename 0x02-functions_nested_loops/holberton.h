@@ -40,4 +40,10 @@ int print_sign(int n);
  * Return: absolute value
  */
 int _abs(int);
+/**
+ *print_last_digit - prints the last digit of a number
+ *@int: integer
+ *Return: return the value of last digit
+ */
+int print_last_digit(int);
 #endif

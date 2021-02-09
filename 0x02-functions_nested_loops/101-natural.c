@@ -6,14 +6,15 @@
  */
 int _putchar(char c)
 {
-int sum;
-sum = 0;
-for (c = 0; c < 1024; c++)
+char c = '0';
+int sum = 0;
+while (c < 1024)
 {
-if ((c % 3 == 0) || (c % 5 == 0))
+if (c % 3 == 0 || c % 5 == 0)
 {
 sum += c;
 }
+c++;
 }
 _putchar(sum);
 return (0);

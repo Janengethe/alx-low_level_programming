@@ -1,18 +1,17 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
  * main - print sum of multiples of 3 or 5 below 1024
  * Return: 0
  */
-nt main(void)
+int _putchar(char c)
 {
-int n;
 int sum;
 sum = 0;
-for (n = 0; n < 1024; n++)
+for (c = 0; c < 1024; c++)
 {
-if ((n % 3 == 0) || (n % 5 == 0))
+if ((c % 3 == 0) || (c % 5 == 0))
 {
-sum += n;
+sum += c;
 }
 }
 printf("%d\n", sum);

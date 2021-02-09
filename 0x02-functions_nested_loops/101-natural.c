@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
- * main - print sum of multiples of 3 or 5 below 1024
+ * _putchar - print sum of multiples of 3 or 5 below 1024
  * Return: 0
+ *@c: character to print
  */
 int _putchar(char c)
 {
@@ -14,6 +15,6 @@ if ((c % 3 == 0) || (c % 5 == 0))
 sum += c;
 }
 }
-printf("%d\n", sum);
+_putchar(sum);
 return (0);
 }

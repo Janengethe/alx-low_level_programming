@@ -1,21 +1,21 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
- * _putchar - print sum of multiples of 3 or 5 below 1024
- * Return: 0
- *@c: character to print
+ * main - psum of multiples of 3 and 5
+ *
+ * Return: 0 if success
  */
-int _putchar(char c)
+int main(void)
 {
-char c = '0';
-int sum = 0;
-while (c < 1024)
+int n, sum = 0;
+for (n = 1023; n >= 0; n--)
 {
-if (c % 3 == 0 || c % 5 == 0)
+if (n % 3 == 0 || n % 5 == 0)
 {
-sum += c;
+sum += n;
 }
-c++;
 }
-_putchar(sum);
+printf("%d", sum);
+printf("\n");
 return (0);
 }

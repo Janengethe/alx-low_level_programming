@@ -1,22 +1,27 @@
-#include "holberton.h"
 #include <stdio.h>
+
 /**
- * main - psum of multiples of 3 and 5
- *
- * Return: 0 if success
+ * main - print first 50 Fibonacci numbers
+ * Return: 0
  */
+
 int main(void)
 {
-int n, sum = 0;
+int counter;
+int countto = 50;
+long a = 1;
+long b = 2;
 
-for (n = 1023; n >= 0; n--)
+for (counter = 1; counter <= (countto / 2); counter++)
 {
-if (n % 3 == 0 || n % 5 == 0)
-{
-sum += n;
+printf("%li %li ", a, b);
+a += b;
+b += a;
 }
-}
-printf("%d", sum);
+if (countto % 2 == 1)
+printf("%li", a);
+
 printf("\n");
+
 return (0);
 }

@@ -1,21 +1,23 @@
 #include "holberton.h"
 /**
- *print_alphabet_x10 - print alphabet 10x
- *Return: always 0 (success)
+ *print_alphabet_x10 - prints alphabet 10X
+ *
+ * Return: always 0
  */
 void print_alphabet_x10(void)
 {
-int n = 0;
-char a = 'a';
-while (n <= 9)
+char l;
+int j;
+j = 0;
+while (j <= 10)
 {
-while (a <= 'z')
+l = 'a';
+while (l <= 'z')
 {
-_putchar (a);
-a++;
+_putchar(l);
+l++;
 }
-_putchar ('\n');
-n++;
+_putchar(10);
+j++;
 }
-return;
 }

@@ -50,4 +50,11 @@ void print_most_numbers(void);
  */
 void more_numbers(void);
 
+/**
+ *print_line - to print a line in the terminal
+ *@n: integer to print
+ *Return: always 0
+ */
+void print_line(int n);
+
 #endif /* _HOLBERTON_H_ */

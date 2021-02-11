@@ -38,4 +38,15 @@ int mul(int a, int b);
  */
 void print_numbers(void);
 
+/**
+ *print_most_numbers - print numbers 0-9 except 2 and 4
+ *Return: always 0
+ */
+void print_most_numbers(void);
+
+/**
+ *more_numbers - prints 10x
+ *Return: always 0
+ */
+void more_numbers(void);
 #endif /* _HOLBERTON_H_ */

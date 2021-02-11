@@ -57,4 +57,11 @@ void more_numbers(void);
  */
 void print_line(int n);
 
+/**
+ *print_diagonal -  draw a diagonal line in the terminal
+ *@n: no. of tines to print
+ *Return: always 0
+ */
+void print_diagonal(int n);
+
 #endif /* _HOLBERTON_H_ */

@@ -28,7 +28,7 @@ int _isdigit(int c);
  *mul - to multiply 2 integers
  *@a: integer to use
  *@b: integer to use
- *Return: always 0
+ *Return: product of a*b
  */
 int mul(int a, int b);
 

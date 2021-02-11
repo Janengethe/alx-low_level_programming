@@ -71,4 +71,11 @@ void print_diagonal(int n);
  */
 void print_square(int size);
 
+/**
+ *print_triangle - prints a triangle
+ *@size: size of the triangle
+ *Return: always 0
+ */
+void print_triangle(int size);
+
 #endif /* _HOLBERTON_H_ */

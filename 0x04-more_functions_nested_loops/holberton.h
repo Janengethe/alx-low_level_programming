@@ -64,4 +64,11 @@ void print_line(int n);
  */
 void print_diagonal(int n);
 
+/**
+ *print_square - prints a square
+ *@size: size of the square
+ *Return: always 0
+ */
+void print_square(int size);
+
 #endif /* _HOLBERTON_H_ */

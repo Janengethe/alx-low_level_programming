@@ -78,4 +78,11 @@ void print_square(int size);
  */
 void print_triangle(int size);
 
+/**
+ *print_number - prints an integer
+ *@n: integer to print
+ *Return: always 0
+ */
+void print_number(int n);
+
 #endif /* _HOLBERTON_H_ */

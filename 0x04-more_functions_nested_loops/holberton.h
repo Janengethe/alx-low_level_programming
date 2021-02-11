@@ -32,4 +32,10 @@ int _isdigit(int c);
  */
 int mul(int a, int b);
 
+/**
+ *print_numbers - print numbers from 0-9
+ *Return: 0
+ */
+void print_numbers(void);
+
 #endif /* _HOLBERTON_H_ */

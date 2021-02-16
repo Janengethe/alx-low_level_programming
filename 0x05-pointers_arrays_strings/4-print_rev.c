@@ -12,7 +12,7 @@ int end;
 while (*s != '\0')
 {
 count++;
-s++;
+++s;
 }
 for (end = count; end >= 0; end--)
 {

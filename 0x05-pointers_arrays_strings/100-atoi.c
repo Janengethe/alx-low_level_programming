@@ -7,10 +7,10 @@
  */
 int _atoi(char *s)
 {
-int index, ind2;
+int index, ind2, sign;
 unsigned int res;
-int sign = 1;
 char now;
+sign = 1;
 index = 0;
 res = 0;
 while (*(s + index) != '\0')
@@ -33,6 +33,8 @@ break;
 index++;
 }
 if (sign < 0)
+{
 res *= sign;
+}
 return (res);
 }

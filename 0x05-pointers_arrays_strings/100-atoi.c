@@ -25,7 +25,7 @@ if (now >= '0' && now <= '9')
 ind2 = index;
 while (*(s + ind2) > 47 && *(s + ind2) < 58)
 {
-res = (res * 10) + *(s + ind2) - '0';
+res = (res * 10) + *(s + ind2) -'0';
 ind2++;
 }
 break;

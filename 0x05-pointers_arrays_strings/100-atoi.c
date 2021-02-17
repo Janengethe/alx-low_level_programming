@@ -7,7 +7,7 @@
  */
 int _atoi(char *s)
 {
-int index, ind2, sign;
+int index, sign;
 unsigned int res;
 char now;
 sign = 1;
@@ -22,11 +22,10 @@ sign *= -1;
 }
 if (now >= '0' && now <= '9')
 {
-ind2 = index;
-while (*(s + ind2) > 47 && *(s + ind2) < 58)
+while (*(s + index) > 47 && *(s + index) < 58)
 {
-res = (res * 10) + *(s + ind2) -'0';
-ind2++;
+res = (res * 10) + *(s + index) -'0';
+index++;
 }
 break;
 }

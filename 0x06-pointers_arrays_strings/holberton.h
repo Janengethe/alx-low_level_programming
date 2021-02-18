@@ -82,4 +82,15 @@ char *leet(char *s);
  */
 char *rot13(char *s);
 
+/**
+ *print_number - prints an integer without using long
+ *@n: integer
+ *You can only use _putchar function to print
+ *You are not allowed to use long
+ *You are not allowed to use arrays or pointers
+ *You are not allowed to hard-code special values
+ *Return: nothing
+ */
+void print_number(int n);
+
 #endif /*_HOLBERTON_H_*/

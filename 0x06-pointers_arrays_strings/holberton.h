@@ -56,26 +56,30 @@ void reverse_array(int *a, int n);
 
 /**
  *string_toupper - changes all lowercase in string to uppercase
+ *@s: string
  *Return: nothing
  */
-char *string_toupper(char *);
+char *string_toupper(char *s);
 
 /**
  *cap_string - capitalizes letters in string
+ *@s: string
  *Return: nothing
  */
-char *cap_string(char *);
+char *cap_string(char *s);
 
 /**
  *leet - encodes a string into 1337
+ *@s: string
  *Return: nothing
  */
-char *leet(char *);
+char *leet(char *s);
 
 /**
  *rot13 - encodes a string using rot13
+ *@s: string
  *Return: nothing
  */
-char *rot13(char *);
+char *rot13(char *s);
 
 #endif /*_HOLBERTON_H_*/

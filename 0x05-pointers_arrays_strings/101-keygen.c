@@ -1,19 +1,22 @@
-#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * _strlen - return the length of a a string
- * @s: string to be checked
+ *main - to generate a random valid password
  *
- * Return: lenght of string
+ *Return: always 0
  */
-
-int _strlen(char *s)
+int main(void)
 {
-int i;
-int j = 0;
-for (i = 0; s[i] != '\0'; i++)
+int myrand, count, total;
+srand(time(NULL));
+for (count = 0, total = 2772; total > 122; count++)
 {
-j += 1;
+myrand = (rand() % 125) + 1;
+printf("%c", myrand);
+total -= myrand;
 }
-return (j);
+printf("%c", total);
+return (0);
 }

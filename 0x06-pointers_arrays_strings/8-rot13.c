@@ -17,16 +17,17 @@ int two[53] = {'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y',
 	       'l', 'm', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W',
 	       'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I',
 	       'J', 'K', 'L', 'M'};
-int i, length;
-
-for (length = 0; s[length] != '\0'; length++)
+int i, j;
+j = 0;
+for (j = 0; s[j] != '\0'; j++)
 {
-while (one[i] != '\0' && s[length] != one[i])
+i = 0;
+while (one[i] != '\0' && s[j] != one[i])
 i++;
-{
-if (s[length] == one[i])
-s[length] = two[i];
+
+if (s[j] == one[i])
+s[j] = two[i];
 }
-}
+
 return (s);
 }

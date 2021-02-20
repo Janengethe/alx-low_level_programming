@@ -7,34 +7,22 @@
  */
 char *cap_string(char *s)
 {
-int i;
-/* capitalize first character of the string */
-for (i = 0; s[i] != '\0'; i++)
-{
-/* check first character is lowercase alphabet */
-if (i == 0)
-{
+int i = 0;
 if (s[i] >= 'a' && s[i] <= 'z')
-s[i] -= 32; /* subtract to make it cap */
-continue;
-}
-if (s[i] == ' ')/* check space */
+s[i] = s[i] - 'a' + 'A';
+i++;
+while (s[i] != '\0')
 {
-/* if space is found, check next character */
-++i;
-/* check next character is lowercase alphabet */
-if (s[i] >= 'a' && s [i] <= 'z')
-{
-s[i] -= 32; /* make it capital */
-continue;
+
+if ((s[i] >= 'a' && s[i] <= 'z')
+&& (s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '.' ||
+s[i - 1] == '!' || s[i - 1] == '?' || s[i - 1] == '"' ||
+s[i - 1] == '(' || s[i - 1] == ')' || s[i - 1] == '{' ||
+s[i - 1] == '}' || s[i - 1] == ' ' || s[i - 1] == '\t'
+|| s[i - 1] == '\n'))
+s[i] = s[i] - 'a' + 'A';
+i++;
 }
-}
-else
-{
-/* all other uppercase characters should be in lowercase */
-if (s[i] >= 'A' && s[i] <= 'Z')
-s[i] += 32; /* add to make lowercase */
-}
-}
-return (0);
+
+return (s);
 }

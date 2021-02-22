@@ -14,11 +14,13 @@
 int _putchar(char c);
 
 /**
- *_memset - fills memory with a constant byte
- *@s: pointer to n
- *@b: constant byte
- *@n: bytes of the memory area
- *Return: a pointer to memory area s
+ * memset - Fills the first n bytes of the memory area
+ *      pointed to by @s with the constant byte @b.
+ * @s: A pointer to the memory area to be filled.
+ * @b: The character to fill the memory area with.
+ * @n: The number of bytes to be filled.
+ *
+ * Return: A pointer to the filled memory area @s
  */
 char *_memset(char *s, char b, unsigned int n);
 
@@ -27,7 +29,7 @@ char *_memset(char *s, char b, unsigned int n);
  *@dest: destination area
  *@src: sorce area
  *@n: bytes of the memory area
- *Return: a poiter to dest
+ *Return: a pointer to dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n);
 

@@ -9,16 +9,31 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-int i, j;
-for (i = 0; haystack[i] != '\0'; i++) /* iterate through string */
+int i, j, x;
+if (needle[0] == '\0')
+return (haystack);
+
+for (i = 0; haystack[i] != '\0'; i++) /* iterate through haystack */
 {
-for (j = 0; needle[j] != '\0'; j++) /* iterate through needle */
+/* if a byte matches first char of needle */
+/* interate through needle until match ends */
+if (haystack[i] == needle[0])
 {
-if (haystack[i] == needle[0]) /*  if a byte matches the first char of needle */
+x = i;
+j = 0;
+while (needle[j] != '\0')
 {
-return (needle);
+if (haystack[x] == needle[j])
+x++;
+j++;
+else
+break;
+} /* if matched throughout, return haystack */
+if (needle[j] == '\0')
+{
+return (haystack + i);
 }
 }
 }
-return (needle);
+return (NULL); /* No match */
 }

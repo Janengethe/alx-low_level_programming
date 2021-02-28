@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
+
 /**
  *main - adds positive numbers
  *@argc: arguments
@@ -9,24 +9,32 @@
  */
 int main(int argc, char *argv[])
 {
-int i, n, m;
+int i, j, sum;
 
-if (argc == 1)
+sum = 0;
+
+if (argc < 2)
 {
 printf("0\n");
+return (0);
 }
-for (i = 0; i < argc; i++)
+
+for (i = 1; i < argc; i++)
 {
-for (n = 0; n < argv[i][n]; n++)
+
+for (j = 0; argv[i][j] != '\0'; j++)
 {
-if (isdigit(argv[i][n]) == 0)
+
+if (argv[i][j] < '0' || argv[i][j] > '9')
 {
 printf("Error\n");
 return (1);
 }
+
 }
-m += atoi(argv[n]);
+
+sum += atoi(argv[i]);
 }
-printf("%d\n", m);
+printf("%d\n", sum);
 return (0);
 }

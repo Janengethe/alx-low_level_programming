@@ -19,6 +19,7 @@ return (NULL);
 
 while (*(str + i))
 size++, i++; /* add null terminator to size */
+size++;
 
 str_copy = malloc(sizeof(char) * size); /* allocate memory */
 

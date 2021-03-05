@@ -13,4 +13,10 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 
 int _putchar(char c);
 
+int if_number(char *s);
+
+unsigned int string_length(char *s);
+
+void print_string(char *s);
+
 #endif

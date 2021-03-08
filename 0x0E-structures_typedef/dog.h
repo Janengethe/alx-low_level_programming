@@ -2,6 +2,11 @@
 #define DOG_H
 
 /**
+ *dog_t - typedef og struct dog
+ */
+typedef struct dog dog_t;
+
+/**
  *struct dog - structure
  *@name: first element
  *@age: second element

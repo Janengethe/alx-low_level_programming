@@ -12,7 +12,7 @@ unsigned int i;
 if (head == NULL)
 return (NULL);
 
-while (i < index && head != NULL)
+while ((i < index) && head != NULL)
 {
 head = head->next;
 i++;

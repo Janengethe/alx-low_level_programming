@@ -32,7 +32,7 @@ while (i < idx)
 temp = temp->next;
 i++;
 
- if (temp == NULL)
+if (temp == NULL)
 {
 free(new_node);
 return (NULL);

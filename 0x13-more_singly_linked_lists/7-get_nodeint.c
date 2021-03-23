@@ -18,10 +18,9 @@ while (i < index)
 head = head->next;
 i++;
 }
-
+}
 if (i == index)
 return (head);
-}
 
 return (NULL);
 }

@@ -13,7 +13,7 @@ while (h != NULL)
 {
 printf("%d\n", h->n);
 
-num_nodes++;
+num_nodes += 1;
 h = h->next;
 }
 

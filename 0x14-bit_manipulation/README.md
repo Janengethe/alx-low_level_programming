@@ -20,5 +20,11 @@
 6. a function that checks the endianness
 7. generating a password to a file
 
+
+### Relevant Sites
+* To check [Endianness](https://www.geeksforgeeks.org/little-and-big-endian-mystery/)
+* Password to [open](https://medium.com/@rickharris_dev/reverse-engineering-using-linux-gdb-a99611ab2d32) a program with help of [ASCII](https://www.browserling.com/tools/ascii-to-text) conversion to text.
+
+
 ### Author
 [Jane Ng'ethe](https://www.instagram.com/1jane_joseph/)

@@ -25,8 +25,9 @@ for (i = 0; text_content[i] != '\0'; i++)
 
 fwrite = write(fd, text_content, i);
 if (fwrite == -1 || fwrite != i)
+close(fd);
 return (-1);
 
-close(fwrite);
+close(fd);
 return (1);
 }

@@ -37,10 +37,10 @@ if (new_node == NULL)
 return (NULL);
 
 new_node->n = n;/*store data at new node*/
+new_node->next = temp;
 temp->prev->next = new_node;
 new_node->prev = temp->prev;
 temp->prev = new_node;
-new_node->next = temp;
 
 return (new_node);
 }

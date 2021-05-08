@@ -8,40 +8,37 @@
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-dlistint_t *del_node = NULL;
-unsigned int i;
+dlistint_t *del = NULL;
 
-if (head == NULL || *head == NULL)/*empty list*/
+/* do nothing if nothing to delete */
+if (head == NULL || *head == NULL)
 return (-1);
 
-/*deleting the first node*/
+del = *head;
+
+/* delete first node */
 if (index == 0)
 {
-del_node = *head;
-*head = del_node->next;
+*head = (*head)->next;
+free(del);
 if (*head != NULL)
-{
 (*head)->prev = NULL;
-}
-free(del_node);
 return (1);
 }
 
-del_node = *head;
-if (del_node != NULL)
+/* delete nth node as long as within range of list */
+while ((index != 0) && (del->next != NULL))
 {
-for (i = 0; i < index; i++)
-del_node = del_node->next;
+index -= 1;
+del = del->next;
 }
-if (del_node == NULL)
+if (index == 0)
 {
-return (-1);
-}
-del_node->prev->next = del_node->next;
-if (del_node->next == NULL)
-{
-del_node->next->prev = del_node->prev;
-}
-free(del_node);
+del->prev->next = del->next;
+if (del->next != NULL)
+del->next->prev = del->prev;
+free(del);
 return (1);
+}
+return (-1);
 }

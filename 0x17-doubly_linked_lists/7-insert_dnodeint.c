@@ -34,7 +34,9 @@ else if (temp != NULL)
 new_node = malloc(sizeof(dlistint_t));/*malloc new node*/
 
 if (new_node == NULL)
+{
 return (NULL);
+}
 
 new_node->n = n;/*store data at new node*/
 new_node->next = temp;

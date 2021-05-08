@@ -26,7 +26,7 @@ for (i = 0; i < idx; i++)
 temp = temp->next;
 }
 
-if (temp->next == NULL && i == idx)/*end of the list*/
+if (temp == NULL && i == idx)/*end of the list*/
 return (add_dnodeint_end(h, n));/*add node at end*/
 
 else if (temp != NULL)

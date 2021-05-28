@@ -11,18 +11,18 @@ hash_table_t *ht;
 unsigned long int i;
 hash_node_t **array;
 
-if(size == 0)
-return(NULL);
+if (size == 0)
+return (NULL);
 
 ht = malloc(sizeof(hash_table_t));
-if(ht == NULL)
-return(NULL);
+if (ht == NULL)
+return (NULL);
 
 array = malloc(sizeof(*array) * size);
-if(array == NULL)
-return(NULL);
+if (array == NULL)
+return (NULL);
 
-for(i = 0; i < size; i++)
+for (i = 0; i < size; i++)
 {
 array[i] = NULL;
 }
@@ -30,5 +30,5 @@ array[i] = NULL;
 ht->size = size;
 ht->array = array;
 
-return(ht);
+return (ht);
 }

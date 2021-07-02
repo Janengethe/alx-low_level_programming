@@ -20,9 +20,7 @@ oclean:
 	$(RM) $(OBJ)
 
 # deletes tmp files, executable anf object files
-fclean:
-	clean oclean
+fclean: clean oclean
 
 # Forces recompilation of all source files
-re:
-	oclean all
+re: oclean all

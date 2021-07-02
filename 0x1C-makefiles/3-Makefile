@@ -3,6 +3,7 @@ SRC = main.c holberton.c
 OBJ = $(SRC:.c=.o)
 NAME = holberton
 RM = rm -f
+
 # make all files executable
 all: m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
@@ -16,9 +17,7 @@ oclean:
 	$(RM) $(OBJ)
 
 # deletes tmp files, executable anf object files
-fclean:
-	clean oclean
+fclean: clean oclean
 
 # Forces recompilation of all source files
-re:
-	oclean all
+re: oclean all

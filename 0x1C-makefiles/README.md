@@ -3,6 +3,7 @@
 > of programming, specific to make and Makefiles in Unix.
 > [These files](https://github.com/holbertonschool/0x1B.c) are used
 > for compiling. Usage: `make [all/clean/oclean/fclean/re] -f [file]`
+> `make -f [file]` allows you to use file as a makefile.
 
 ### Files Descriptions
 * holberton.c ---- function that displays visual seahorse

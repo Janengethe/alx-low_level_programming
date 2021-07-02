@@ -5,6 +5,9 @@
 > for compiling. Usage: `make [all/clean/oclean/fclean/re] -f [file]`
 > `make -f [file]` allows you to use file as a makefile.
 
+### Reference materials
+* Makefile for C program compilation and [How to create Makefile](https://www.includehelp.com/c-programming-questions/what-is-makefile.aspx)
+
 ### Files Descriptions
 * holberton.c ---- function that displays visual seahorse
 * main.c --------- program that holds above function

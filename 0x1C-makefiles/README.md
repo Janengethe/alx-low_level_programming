@@ -7,6 +7,7 @@
 
 ### Reference materials
 * Makefile for C program compilation and [How to create Makefile](https://www.includehelp.com/c-programming-questions/what-is-makefile.aspx)
+* [Phony Targets](https://www.gnu.org/software/make/manual/html_node/Phony-Targets.html)
 
 ### Files Descriptions
 * holberton.c ---- function that displays visual seahorse

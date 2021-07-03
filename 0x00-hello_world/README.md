@@ -1,6 +1,5 @@
 ## 0x00. C - Hello, World
 
-
 ### Reference Materials
 * [Everything you need to know to start with C.pdf](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/misc/2021/1/d801279f75de6a982a55d752dfd3632909f720f0.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU65GPZGY3%2F20210703%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210703T065434Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=609088c0d59214dccc7e949f2c53b78304213c0c722d0fc06fe9b01821cd70ac)
 * [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie)
@@ -66,11 +65,14 @@ done
 1. Compiler. `1-compiler`- a script that compiles a C file but does not link.The C file name will be saved in the variable `$CFILE` The output file should be named the same as the `C` file, but with the extension `.o` instead of `.c`.
 2. Assembler. `2-assembler`- a script that generates the assembly code of a C code and save it in an output file. The output file should be named the same as the C file, but with the extension `.s` instead of `.c`
 3. Name. `3-name`- a script that compiles a C file and creates an executable named `cisfun`. The C file name will be saved in the variable `$CFILE`
-4. Hello, puts. `4-puts.c`- a C program that prints exactly `\"Programming is like building a multilingual puzzle`, followed by a new line.
-5. Hello, printf. `5-printf.c`- a C program that prints exactly `with proper grammar, but the outcome is a piece of art,`, followed by a new line.
-6. Size is not grandeur, and territory does not make a nation. `6-size.c`- a C program that prints the size of various types on the computer it is compiled and run on.
+4. Hello, puts. `4-puts.c`- a C program that prints exactly `\"Programming is like building a multilingual puzzle`, followed by a new line. gcc compilation: `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 4-puts.c && ./a.out`
+5. Hello, printf. `5-printf.c`- a C program that prints exactly `with proper grammar, but the outcome is a piece of art,`, followed by a new line. gcc compilation: `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 5-printf.c`
+6. Size is not grandeur, and territory does not make a nation. `6-size.c`- a C program that prints the size of various types on the computer it is compiled and run on. gcc compilation: `gcc 6-size.c -m32 -o size32 2> /tmp/32` and `gcc 6-size.c -m64 -o size64 2> /tmp/64`
 7. Intel. `100-intel`- a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
-8. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity. `101-quote.c`- a C program that prints exactly `and that piece of art is useful\" - Dora Korpar, 2015-10-19`, followed by a new line, to the standard error.
+8. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity. `101-quote.c`- a C program that prints exactly `and that piece of art is useful\" - Dora Korpar, 2015-10-19`, followed by a new line, to the standard error. gcc compilation: `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -o quote 101-quote.c`
+9. Executables- `a.out`, `quote`, `size32`, `size64`
+10. `main.s`- assembly file
+11. `main.o`- object file
 
 #### Author
 [Jane Ng'ethe](https://github.com/Janengethe)

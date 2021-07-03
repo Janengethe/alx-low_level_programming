@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
  * add - add two integers
  * @a: two integer arguments
@@ -7,5 +8,5 @@
  */
 int add(int a, int b)
 {
-return (a + b);
+	return (a + b);
 }

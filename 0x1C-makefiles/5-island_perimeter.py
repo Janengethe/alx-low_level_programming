@@ -9,15 +9,15 @@ def island_perimeter(grid):
     """
     Returns the perimeter of the grid defined by '1'
     """
-    maxWidth = 0
-    length = 0
+    count, repeat = 0, 0
+
     for i in range(len(grid)):
-        width = 0
-        for j in range(len(grid[0])):
+        for j in range(len(grid[i])):
             if grid[i][j] == 1:
-                width += 1
-        if width:
-            length += 1
-        if width > maxWidth:
-            maxWidth = width
-    return ((maxWidth + length) * 2)
+                count += 1
+                if i != 0 and grid[i - 1][j] == 1:
+                    repeat += 1
+                if j != 0 and grid[i][j - 1] == 1:
+                    repeat += 1
+
+    return 4*count - 2*repeat
